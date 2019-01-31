@@ -2,8 +2,16 @@
 @import 'mixins'
 @import 'normalize'
 @import 'fonts'
+@import 'interface'
+@import 'button'
 
 @import 'header'
+@import 'main'
+@import 'price'
+@import 'portfolio'
+@import 'stages'
+@import 'customer'
+@import 'footer'
 
 
 body
@@ -13,12 +21,28 @@ body
 *, *:after, *:before 
   box-sizing: border-box
 
+.poinret
+	&:hover
+    cursor: pointer
+		
 .container 
-  width: 1168px
+  width: 1170px
   margin: 0 auto
+
+h1, h2
+	margin: 0
 
 ul, li, a 
 	list-style: none
 	color: #000000
 	padding: 0
 
+
+.center
+	text-align: center
+
+active, hover, focus, input, button
+	outline: 0
+	outline-offset: 0
+	
+@import 'media'

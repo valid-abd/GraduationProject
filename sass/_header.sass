@@ -1,6 +1,11 @@
 .header
-	background-image: url('../img/fon.jpg')
-	min-height: 710px
+	background:
+		image: url('../img/fon.jpg') 
+		position: top
+		repeat: no-repeat
+	max-height: 710px
+	overflow: hidden
+	position: relative
 	&-container
 		height: 55px
 		box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
@@ -12,15 +17,16 @@
 		justify-content: space-between
 		align-items: center
 	&-button
-		display: none
+		display: none  // для мобильной версии (бургер) 
 	&-menu
 		&__list
 			display: flex
-			width: 794px
+			width: 792px
 			justify-content: space-between
 		& li
 			font-size: 14px
 			text-decoration: underline
+			+regular
 	&-numbers
 		&__list
 			text-align: right
@@ -28,8 +34,12 @@
 				font-size: 17px
 				color: #1f1f1f
 				+bold
+				text-decoration: none
+				&:hover
+    			cursor: pointer
 			&-text
 				color: $text-button-color
 				font-size: 14px
+				+regular
 	
 		

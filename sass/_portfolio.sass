@@ -1,0 +1,102 @@
+
+.portfolio
+	width: 100%
+	height: 753px
+	background-color: #e8e8e8
+	padding: 99px 0
+	&-hr
+		width: 31px
+		height: 2px
+		background-color: #23bac1
+.portfolio
+	text-align: center
+	&-title
+		font-size: 36px
+		+regular
+		color: #000000
+		margin-bottom: 70px
+		&:after
+			content: ''
+			width: 31px
+			height: 2px
+			background-color: $text-button-color
+			right: 50%
+			display: block
+			position: relative
+			left: 50%
+			top: 28px
+	&-subtitle
+		font-size: 20px
+		margin-bottom: 99px
+		+regular
+.slider
+	&__item
+		width: 409px
+		height: 340px
+		// background-color: #23bac1
+		text-align: left
+		outline: none
+		&:hover
+			outline: 0
+		img
+			margin: auto
+	&__discr
+		width: 409px
+		height: 340px
+		&-title
+			font-size: 24px
+			+regular
+			margin-bottom: 44px
+			margin-top: 0
+		&-span
+			font-size: 12px
+			line-height: 20px
+			color: $input-text
+			margin-bottom: 7px
+		&-subtitle
+			font-size: 16px
+			line-height: 20px
+			color: #000000
+			+regular
+			// font-weight: 300
+		&-conditions
+			display: flex
+			justify-content: space-between
+			padding-top: 54px
+			max-width: 408px
+			padding-bottom: 52px
+			&__text
+				font-size: 12px
+				line-height: 20px
+				color: $input-text
+				display: flex
+				flex-direction: column
+				// margin-right: 73px
+			&__quantity
+				font-size: 16px
+				line-height: 34px
+				color: #000000
+				+regular
+		&-button
+			max-width: 216px
+			font-size: 13px
+			bottom: 0
+	.arrow
+		width: 14px
+		position: absolute
+		height: 26px
+		&:hover
+			cursor: pointer
+			outline: none
+		&_right
+			// right: 0
+			right: 6%
+			background: url('../img/slider/right-back.png') no-repeat center
+			transform: translate(15px)
+			top: 50%
+		&_left
+			left: 6%
+			transform: translateX(-70px)
+			margin-left: -15px
+			background: url('../img/slider/left-back.png') no-repeat center
+			top: 50%

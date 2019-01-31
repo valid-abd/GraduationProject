@@ -1,0 +1,60 @@
+.header
+	&-button
+		// width: 45px
+		// height: 45px
+		// border: 1px solid #f70101
+		position: relative
+		margin: 0
+		padding: 0
+		// background-color: #fff
+		// border-radius: 50%
+		&__icon 
+			margin: 0
+			display: block
+			position: relative
+			width: 17px
+			height: 14px
+			opacity: 0.9
+		& span
+			position: absolute
+			top: 45%
+			// margin-top: -2px	
+			margin-left: -1px
+			width: 17px
+			height: 2px
+			background-color: #ffffff
+			&:before
+				content: ''
+				position: absolute
+				transform: translateY(-6px)
+				// top: 45%
+				// margin-top: -5px
+				width: 17px
+				height: 2px
+				background-color: #ffffff
+				transition: 1s
+			&:after
+				content: ''
+				position: absolute
+				transform: translateY(6px)
+				// top: 45%
+				// margin-top: 3px
+				width: 17px
+				height: 2px
+				background-color: #ffffff
+				transition: 1s
+.btn
+	& span
+		&:before
+			transform: rotate(-30deg)
+			transform-origin: bottom left
+			width: 12px
+		&:after
+			transform: rotate(30deg)
+			transform-origin: left top
+			width: 12px
+
+.btn
+	& span
+		// height: 0
+

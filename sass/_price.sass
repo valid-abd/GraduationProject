@@ -1,0 +1,93 @@
+hr
+	width: 9px
+	height: 2px
+	background-color: $text-button-color
+	border: none
+	margin: 0 auto
+.price
+	padding-top: 95px
+	&-title
+		margin-bottom: 62px
+		font-size: 36px
+		color: #000000
+		text-align: center
+		&:after
+			content: ''
+			width: 31px
+			height: 2px
+			background-color: $text-button-color
+			display: block
+			position: relative
+			right: 50%
+			left: 50%
+			top: 25px
+	&-subtitle
+		margin-bottom: 71px
+		color: #000000
+		text-align: center
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+.card
+	max-width: 370px
+	min-height: 680px
+	background-color: $text-disrc-color
+	padding:
+		top: 33px
+		bottom: 40px
+		left: 35px
+		right: 35px
+	text-align: center
+	margin-bottom: 30px
+	transition: 0.2s
+	// border: 1px solid #e8e8e8
+	&:hover
+		box-shadow: 0 5px 32px rgba(0, 0, 0, 0.1)
+	&__title
+		margin-bottom: 24px
+		margin-top: 0
+		font-size: 20px
+		+regular
+	&__discrBlock
+		margin-bottom: 37px
+	&__discr
+		line-height: 35px
+		font-size: 16px
+		margin: 0
+		&-text
+			line-height: 21px
+			margin-bottom: 145px
+			padding: 0 20px
+			margin-top: 28px
+	&__button
+		width: 230px
+		height: 55px
+		background-color: $text-disrc-color
+		border: 1px solid #aeaeae
+		font-size: 13px
+		color: #000000
+		+semibold
+		letter-spacing: 0.33px
+		&:hover
+			color: #ffffff
+			font-size: 15px
+			letter-spacing: 0.38px
+			background-color: $text-button-color
+	&__img
+		width: 300px
+		height: 220px
+		margin-bottom: 22px
+		&-1
+			background-image: url('../img/price/price-1.jpg')
+		&-2
+			background-image: url('../img/price/price-2.jpg')
+		&-3
+			background-image: url('../img/price/price-3.jpg')
+		&-4
+			background-image: url('../img/price/price-4.jpg')
+		&-5
+			background-image: url('../img/price/price-5.jpg')
+		&-6
+			background-image: url('../img/price/price-6.jpg')
