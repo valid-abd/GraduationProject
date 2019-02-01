@@ -41,6 +41,23 @@
 			flex-basis: 55%
 			&__title
 				font-size: 46px
+	.card
+		&__img
+			filter: grayscale(0)
+	.slider
+		margin: 0 25px
+		flex-direction: column
+		// width: 60% !important
+		&__item
+			margin: 0
+		&-wrap
+			width: 407px
+		&__discr
+			margin-top: 20px
+			text-align: center
+	.arrow
+		&_right
+			transform: translate(40px)
 @media (max-width: 768px)
 	.main
 		&-xs
@@ -110,6 +127,7 @@
 			display: none
 		&_right
 			display: none
+	
 @media (max-width: 576px)
 	.main
 		&-advantages
@@ -157,6 +175,30 @@
 				margin: 0
 			&__text
 				text-align: center
+	.slider
+		margin: 0
+		&__item
+			width: 90%
+			height: auto
+			& img 
+				width: 90%
+		&__discr
+			width: 90%
+		&-wrap
+			width: 90%
+	.sliderСustomer
+		margin: 35px
+		&__item
+			max-width: 95%
+	.customer
+		padding: 65px 0
+	.arrow
+		display: none
+		&_left
+			display: none
+		&_right
+			display: none
+
 		
 	// margin: 0
 @media (max-width: 380px)
@@ -184,9 +226,11 @@
 	.portfolio
 		padding: 50px 0
 		&-title
+			font-size: 31px
 			margin-bottom: 45px
 		&-subtitle
 			margin-bottom: 45px
+			font-size: 17px
 	.arrow 
 		&_left
 			display: none
@@ -202,6 +246,8 @@
 	.slider
 		&__discr
 			&-title
+				font-size: 20px
+			&-title
 				margin-bottom: 14px
 			&-span
 			&-conditions
@@ -209,6 +255,10 @@
 				padding-bottom: 10px
 			&-button
 				max-width: 216px
+				&__text
+					font-size: 11px
+				&__quantity
+					font-size: 14px
 	.stages
 		// padding-top: 20px
 		&-wrap

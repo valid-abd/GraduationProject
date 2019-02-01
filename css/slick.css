@@ -46,6 +46,8 @@
         -ms-transform: translate3d(0, 0, 0);
          -o-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0);
+            display: flex;
+            align-items: center;
 }
 
 .slick-track
@@ -101,6 +103,9 @@
 .slick-initialized .slick-slide
 {
     display: block;
+    /* display: flex;
+	justify-content: center;
+	align-items: center; */
 }
 .slick-loading .slick-slide
 {

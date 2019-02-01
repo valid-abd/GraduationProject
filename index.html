@@ -14,12 +14,49 @@
 		<div class="header-container">	
 			<nav>
 				<div class="container header-wrap">
-					<div class="header-button">
-						<a href="#" class="header-button__icon">
-							<span></span>
-						</a>
-					</div><!--- кнопка для мобильной версии-->
+					<div class="header-burger">
+						<div class="header-button">
+							<a href="#" class="header-button__icon">
+								<span></span>
+								<p class="header-button__text"> МЕНЮ</p>
+							</a>
+						</div>
+							<!--header-burger-->
+								<div class="header-mobile">
+									<ul class="header-mobile__menu">
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#a">Главная </a>
+										</li>
+								
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#b">Виды макетов</a>
+										</li>
+								
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#c">Комплектация макетов</a>
+										</li>
+								
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#d">Реализованные проекты</a>
+										</li>
+								
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#i">Наши клиенты</a>
+										</li>
+								
+										<li class="header-mobile__list">
+											<a class="header-mobile__list-text" href="#f">Контакты</a>
+										</li>
+								
+									</ul>
+								</div>
+						</div>
+						<!--- кнопка для мобильной версии-->
+						
 
+					<script>
+						
+					</script>
 					<div class=" header-menu">
 						<ul class="header-menu__list">
 							<li class="">
@@ -86,30 +123,19 @@
 							<span>30 минут</span>
 						</h2>
 						<form action="#" class="main-form__ login">
-							<input type="text" class="input name" name="user-name" placeholder="Ваше имя" readonly>
-							<input type="tel" class="input phone" name="user-phone" placeholder="Контактный телефон" readonly>
-							<input type="mail" class="input email" name="user-mail" placeholder="Электронная почта" readonly>
+							<input type="text" class="input name" name="user-name" placeholder="Ваше имя"  maxlength="15" >
+							<input type="tel" class="input phone" name="user-phone" placeholder="Контактный телефон"  maxlength="15">
+							<input type="mail" class="input email" name="user-mail" placeholder="Электронная почта"  maxlength="15">
 							<button type="submit" class="button">Оставить заявку</button>
 						</form>
 					</div><!--main-form-->
 				</div> <!--main-wrap-->
-				
+			
 			</div>
 		</div>
 	</header>
 
-<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/slick.min.js"></script>
 
-<!-- button-mobil -->
-<script>
-	$('.header-button__icon').on('click', function(e) {
-		e.preventDefault;
-		$(this).toggleClass('btn');
-	});
-</script>
-<!-- button-mobil -->
 
 <section class="price" id="b">
 	<div class="container">
@@ -222,77 +248,49 @@
 		<div class="portfolio-title">Реализованные проекты</div>
 		
 		<div class="portfolio-subtitle">Более 100 компаний уже решают свои бизнес – задачи с помощью наших макетов</div>
-			<div class="slider">
-				<div class="slider__item"><img src="img/slider/slider-1.jpg" alt="фото "></div>
-				<div class="slider__item slider__discr">
-					<h3 class="slider__discr-title">Порт Артек</h3>
-					<p class="slider__discr-span">Описание:</p>
-					<div class="slider__discr-subtitle">Презентация порта Артек для первых лиц государства</div>
-					<div class="slider__discr-conditions">
-						<div class="slider__discr-conditions__text">Масштаб: <span class="slider__discr-conditions__quantity">1:200</span> </div>
-						<div class="slider__discr-conditions__text">Размер: <span class="slider__discr-conditions__quantity">1000х2000</span> </div>
-						<div class="slider__discr-conditions__text">Срок изготовления: <span class="slider__discr-conditions__quantity">40 дней</span> </div>
-					</div><!--slider__discr-conditions-->
-					<button class="slider__discr-button button">заказать макет</button>
-				</div>
-				<div class="slider__item"><img src="img/slider/slider-2.jpg" alt="фото "></div>
-				<div class="slider__item slider__discr">
-					<h3 class="slider__discr-title">Порт Артек</h3>
-					<p class="slider__discr-span">Описание:</p>
-					<div class="slider__discr-subtitle">Презентация порта Артек для первых лиц государства</div>
-					<div class="slider__discr-conditions">
-						<div class="slider__discr-conditions__text">Масштаб: <span class="slider__discr-conditions__quantity">1:200</span>
+				<div class="slider-wrap">
+					<div class="slider">
+						<div class="slider__item">
+							<img src="img/slider/slider-1.jpg" alt="фото ">
 						</div>
-						<div class="slider__discr-conditions__text">Размер: <span class="slider__discr-conditions__quantity">1000х2000</span>
+						<div class="slider__item slider__discr">
+							<h3 class="slider__discr-title">Порт Артек</h3>
+							<p class="slider__discr-span">Описание:</p>
+							<div class="slider__discr-subtitle">Презентация порта Артек для первых лиц государства</div>
+							<div class="slider__discr-conditions">
+								<div class="slider__discr-conditions__text">Масштаб: <span class="slider__discr-conditions__quantity">1:200</span> </div>
+								<div class="slider__discr-conditions__text">Размер: <span class="slider__discr-conditions__quantity">1000х2000</span> </div>
+								<div class="slider__discr-conditions__text">Срок изготовления: <span class="slider__discr-conditions__quantity">40 дней</span> </div>
+							</div><!--slider__discr-conditions-->
+							<button class="slider__discr-button button">заказать макет</button>
 						</div>
-						<div class="slider__discr-conditions__text">Срок изготовления: <span class="slider__discr-conditions__quantity">40
-								дней</span> </div>
 					</div>
-					<!--slider__discr-conditions-->
-					<button class="slider__discr-button button">заказать макет</button>
-				</div>
-				
+						<div class="slider">
+							<div class="slider__item">
+								<img src="img/slider/slider-2.jpg" alt="фото ">
+							</div>
+							<div class="slider__item slider__discr">
+								<h3 class="slider__discr-title">Порт Артек</h3>
+								<p class="slider__discr-span">Описание:</p>
+								<div class="slider__discr-subtitle">Презентация порта Артек для первых лиц государства</div>
+								<div class="slider__discr-conditions">
+									<div class="slider__discr-conditions__text">Масштаб: <span class="slider__discr-conditions__quantity">1:200</span>
+									</div>
+									<div class="slider__discr-conditions__text">Размер: <span class="slider__discr-conditions__quantity">1000х2000</span>
+									</div>
+									<div class="slider__discr-conditions__text">Срок изготовления: <span class="slider__discr-conditions__quantity">40
+											дней</span> </div>
+								</div>
+								<!--slider__discr-conditions-->
+								<button class="slider__discr-button button">заказать макет</button>
+							</div>
+						</div>
 				</div>
 			</div>
 	</div>
 </section>
 
 
-
-<script>
-	$(document).ready(function () {
-		$('.slider').slick({
-			
-			slidesToShow: 2, /*кол слайдов*/
-			slidesToScroll: 2, /*перелистывать слайдов*/
-			nextArrow: '<div class="arrow arrow_right"></div>', /*путь для кнопки*/
-			prevArrow: '<div class="arrow arrow_left"></div>',  /*путь для кнопки*/
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				},
-				{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 2,
-						slidesToScroll: 2
-					}
-				},
-				{
-					breakpoint: 768,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
-	});
-</script>
 <!--слайд -->
 <section class="stages" id="d">
 	<div class="container">
@@ -338,7 +336,7 @@
 <section class="customer" id="i">
 	<div class="container">
 		<h2 class="customer-title">Наши клиенты</h2>
-		<div class="sliderСustomer">
+		<div class="sliderСustomer fade">
 			<div class="sliderСustomer__item"><img src="/img/sliderClient/sliderClient-1.png" alt=""></div>
 			<div class="sliderСustomer__item"><img src="/img/sliderClient/sliderClient-2.png" alt=""></div>
 			<div class="sliderСustomer__item"><img src="/img/sliderClient/sliderClient-3.png" alt=""></div>
@@ -352,47 +350,7 @@
 		</div>
 	</div>
 </section>
-<script>
-	$(document).ready(function () {
-		$('.sliderСustomer').slick({
-			// speed: 300,
-			slidesToShow: 5, /*кол слайдов*/
-			slidesToScroll: 1, /*перелистывать слайдов*/
-			nextArrow: '<div class="arrow arrow_right"></div>', /*путь для кнопки*/
-			prevArrow: '<div class="arrow arrow_left"></div>',  /*путь для кнопки*/
-			responsive: [
-				{
-					breakpoint: 1200,
-					settings: {
-						slidesToShow: 4,
-						slidesToScroll: 1
-					}
-				},
-				{
-					breakpoint: 1024,
-					settings: {
-						slidesToShow: 3,
-						slidesToScroll: 1
-					}
-				},
-				{
-				breakpoint: 768,
-				settings: {
-					slidesToShow: 2,
-					slidesToScroll: 1
-				}
-				} ,
-				{
-					breakpoint: 576,
-					settings: {
-						slidesToShow: 1,
-						slidesToScroll: 1
-					}
-				}
-			]
-		});
-	});
-</script>
+
 
 <div class="map">
 	<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05d868b0f1d087feca23012d2194b420e2f818c1f9d7a52e43f5f3ac1c4ddadc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
@@ -416,7 +374,98 @@
 		</div>
 
 
+		<!-- <script src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		
+		
+		
+		<script>
+			$(document).ready(function () {
+				$('.slider-wrap').slick({
+					slidesToShow: 1, /*кол слайдов*/
+					slidesToScroll: 1, /*перелистывать слайдов*/
+					nextArrow: '<div class="arrow arrow_right"></div>', /*путь для кнопки*/
+					prevArrow: '<div class="arrow arrow_left"></div>',  /*путь для кнопки*/
+					responsive: [
+						{
+							breakpoint: 1200,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 1024,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						},
+						{
+							breakpoint: 768,
+							settings: {
+								slidesToShow: 1,
+								slidesToScroll: 1
+							}
+						}
+					]
+				});
+			});
+		</script>
+
+	<script>
+		$(document).ready(function () {
+			$('.fade').slick({
+				// speed: 300,
+				// setting-name: setting - value,
+				slidesToShow: 5, /*кол слайдов*/
+				slidesToScroll: 1, /*перелистывать слайдов*/
+				nextArrow: '<div class="arrow arrow_right"></div>', /*путь для кнопки*/
+				prevArrow: '<div class="arrow arrow_left"></div>',  /*путь для кнопки*/
+				responsive: [
+					{
+						breakpoint: 1200,
+						settings: {
+							slidesToShow: 4,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 3,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1
+						}
+					},
+					{
+						breakpoint: 576,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1
+						}
+					}
+				]
+			});
+		});
+	</script>
 	
+	<!-- button-mobil -->
+	<script>
+		$('.header-button__icon').on('click', function (e) {
+			e.preventDefault;
+			$(this).toggleClass('btn');
+			$('.header-mobile').toggleClass('mobile');
+		});
+	</script>
+	<!-- button-mobil -->
 
 	</div>
 </footer>

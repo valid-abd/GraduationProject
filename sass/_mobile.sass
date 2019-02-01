@@ -1,0 +1,23 @@
+.header
+	&-mobile
+		// display: none
+		width: 200px
+		border: 2px solid #000000
+		position: absolute
+		background-color: #333333
+		// margin: 25px
+		transition: 0.5s
+		transform-origin: left top
+		transform: scale(0) translateX(6%)
+		&__menu 
+			margin: 0
+		&__list
+			padding: 5px
+			border: 1px solid #000 
+			&-text
+				font-size: 14px
+				color: #ffffff
+				+regular 
+				text-decoration: none
+.mobile
+  transform: scale(1) translateY(19%)
