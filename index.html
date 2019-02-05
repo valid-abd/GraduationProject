@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="shortcut icon" href="./img/icon-mock.ico" />
 	<link rel="stylesheet" href="css/style.min.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<title>Graduation Project</title>
@@ -52,12 +53,8 @@
 								</div>
 						</div>
 						<!--- кнопка для мобильной версии-->
-						
-
-					<script>
-						
-					</script>
-					<div class=" header-menu">
+					
+					<div class="header-menu">
 						<ul class="header-menu__list">
 							<li class="">
 								<a class="pointer" href="#a">Главная </a>
@@ -82,8 +79,8 @@
 					<!--header-menu-->
 					<div class="header-numbers">
 						<ul class="header-numbers__list">
-							<li><span class="header-numbers__list-phone"><a class="pointer header-numbers__list-phone" href="tel:88008913333">8 800 891-33-33</a> </span></li>
-							<li><a class="header-numbers__list-text pointer " href="#">Заказать обратный звонок</a></li>
+							<li><span class="header-numbers__list-phone  "><a class=" header-numbers__list-phone" href="tel:88008913333">8 800 891-33-33</a> </span></li>
+							<li><a class="header-numbers__list-text pointer btn " href="#">Заказать обратный звонок</a></li>
 						</ul>
 					</div> <!--номер телефона-->
 				</div> <!--container header-wrap-->
@@ -123,10 +120,10 @@
 							<span>30 минут</span>
 						</h2>
 						<form action="#" class="form main-form__ login">
-							<input type="text" class="input name" name="user-name" placeholder="Ваше имя"  maxlength="15" >
-							<input type="tel" class="input phone" name="user-phone" placeholder="Контактный телефон"  maxlength="15">
-							<input type="mail" class="input email" name="user-mail" placeholder="Электронная почта"  maxlength="15">
-							<button type="submit" class="button">Оставить заявку</button>
+							<input type="text" class="input name" name="user-name" placeholder="Ваше имя"  maxlength="15" required >
+							<input type="tel" class="input phone" name="user-phone" placeholder="Контактный телефон"  maxlength="18" required data-mask="+7 (000) 000-00-00" pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="off">
+							<input type="email" class="input email" name="user-email" placeholder="Электронная почта"  maxlength="15" required>
+							<button type="submit" class="button time">Оставить заявку</button>
 						</form>
 					</div><!--main-form-->
 				</div> <!--main-wrap-->
@@ -158,7 +155,7 @@
 				<p class="card__discr">Административные здания</p>
 				<hr>
 				<p class="card__discr">Гостиницы санатории</p>
-				<button class="card__button btn">рассчитать стоимость</button>
+				<button class="card__button btn time">рассчитать стоимость</button>
 			</div>
 			<div class="card">
 				<h4 class="card__title">Градостроительные макеты</h4>
@@ -176,7 +173,7 @@
 					<hr>
 					<p class="card__discr">Мосты и тоннели</p>
 				</div>
-				<button class="card__button btn">рассчитать стоимость</button>
+				<button class="card__button btn time">рассчитать стоимость</button>
 			</div>
 			<div class="card">
 				<h4 class="card__title">Промышленные макеты</h4>
@@ -194,7 +191,7 @@
 				<p class="card__discr">Производственные линии</p>
 				<hr>
 				<p class="card__discr">Технологические линии</p>
-				<button class="card__button btn">рассчитать стоимость</button>
+				<button class="card__button btn time">рассчитать стоимость</button>
 			</div>
 			<div class="card">
 				<h4 class="card__title">Интерьеные макеты</h4>
@@ -212,7 +209,7 @@
 				<p class="card__discr">Торговые центры</p>
 				<hr>
 				<p class="card__discr">Заводы</p>
-				<button class="card__button btn" >рассчитать стоимость</button>
+				<button class="card__button btn time" >рассчитать стоимость</button>
 			</div>
 			<div class="card">
 				<h4 class="card__title">Ландшафтные макеты</h4>
@@ -230,14 +227,14 @@
 					<hr>
 					<p class="card__discr">Участки</p>
 				</div>
-				<button class="card__button btn" >рассчитать стоимость</button>
+				<button class="card__button btn time" >рассчитать стоимость</button>
 			</div>
-			<div class="card">
+			<div class="card card-text">
 				<h4 class="card__title">Индивиудальные макеты</h4>
 				<div class="card__img card__img-6"></div>
 				<p class="card__discr-text">Мы может воплотить в жизнь любые идеи, с применением высоких технологий, максимальной детализацией
 				и&nbsp;совершенно любых размеров</p>
-				<button class="card__button btn">рассчитать стоимость</button>
+				<button class="card__button btn time">рассчитать стоимость</button>
 			</div>
 		</div>
 	</div>
@@ -262,7 +259,7 @@
 								<div class="slider__discr-conditions__text">Размер: <span class="slider__discr-conditions__quantity">1000х2000</span> </div>
 								<div class="slider__discr-conditions__text">Срок изготовления: <span class="slider__discr-conditions__quantity">40 дней</span> </div>
 							</div><!--slider__discr-conditions-->
-							<button class="slider__discr-button button btn">заказать макет</button>
+							<button class="slider__discr-button button btn time">заказать макет</button>
 						</div>
 					</div>
 						<div class="slider">
@@ -282,12 +279,12 @@
 											дней</span> </div>
 								</div>
 								<!--slider__discr-conditions-->
-								<button class="slider__discr-button button btn" >заказать макет</button>
+								<button class="slider__discr-button button btn time" >заказать макет</button>
 							</div>
 						</div>
 				</div>
-			</div>
 	</div>
+	
 </section>
 
 
@@ -353,7 +350,7 @@
 
 
 <div class="map">
-	<script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05d868b0f1d087feca23012d2194b420e2f818c1f9d7a52e43f5f3ac1c4ddadc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
+	<script async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A05d868b0f1d087feca23012d2194b420e2f818c1f9d7a52e43f5f3ac1c4ddadc&amp;width=100%25&amp;height=416&amp;lang=ru_RU&amp;scroll=false"></script>
 </div>
 
 <footer class="footer" id="f">
@@ -368,13 +365,14 @@
 				  Автомоторная улица, 4А, стр.21</div>
 			</div>
 			<div class="contacts-phone">
-				<div class="contacts-phone__tell"><a href="tel:88008913333">8 800 891-33-33</a></div>
-				<div class="contacts-phone__text"><a href="#">Заказать обратный звонок</a></div>
+				<div class="contacts-phone__tell "><a href="tel:88008913333">8 800 891-33-33</a></div>
+				<div class="contacts-phone__text btn"><a href="#">Заказать обратный звонок</a></div>
 			</div>
 		</div>
 
 
 		<div class="modal" id="modal-btn">
+			
 			<div class="modal-form" id="form-modal">
 				<div class="modal-img" id="off-form"></div>
 					<h2 class="modal-form__title center">
@@ -382,19 +380,21 @@
 						<span>30 минут</span>
 					</h2>
 					<form action="#" class=" form modal-form__login">
-						<input type="text" class="input modal-name name" name="user-name" placeholder="Ваше имя" maxlength="15">
-						<input type="tel" class="input modal-phone phone" name="user-phone" placeholder="Контактный телефон" data-mask="+7 (000) 000-00-00" autocomplete="off">
-						<input type="mail" class="input modal-email email" name="user-mail" placeholder="Электронная почта" maxlength="15">
-						<button type="submit" class="button modal-button" id="modal_close">Оставить заявку</button>
+						<input type="text" class="input modal-name name" name="user-name" placeholder="Ваше имя" maxlength="15" required>
+						<input type="tel" class="input modal-phone phone" name="user-phone" placeholder="Контактный телефон" data-mask="+7 (000) 000-00-00" autocomplete="off" maxlength="18" required  pattern="[+]\d{1}\s[(]\d{3}[)]\s\d{3}[-]\d{2}[-]\d{2}">
+						<input type="email" class="input modal-email email" name="user-email" placeholder="Электронная почта" maxlength="15" required>
+						<button type="submit" class="button modal-button time" id="modal_close">Оставить заявку</button>
 					</form>
 			</div>
 		<!--main-form-->
 		</div>
-
+</div> 
+</footer>
 
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/jquery-3.3.1.min.js"></script>
 		<script src="js/slick.min.js"></script>
+		<script src="js/jquery.mask.min.js"></script>
 		
 		<script>
 			$(document).ready(function () { // вся мaгия пoсле зaгрузки стрaницы
@@ -408,7 +408,7 @@
 							});
 					});
 					/* Зaкрытие мoдaльнoгo oкнa, тут делaем тo же сaмoе нo в oбрaтнoм пoрядке */
-					$('#off-form, #modal-btn').click(function () { // лoвим клик пo крестику или пoдлoжке
+					$('#off-form, #k').click(function () { // лoвим клик пo крестику или пoдлoжке
 						$('#form-modal')
 							.animate({ opacity: 0, top:'50%' }, 200,  // плaвнo меняем прoзрaчнoсть нa 0 и oднoвременнo двигaем oкнo вверх
 								function () { // пoсле aнимaции
@@ -523,7 +523,6 @@
 			return true;
 		});
 	</script>
-	</div>
-</footer>
+	
 </body>
 </html>

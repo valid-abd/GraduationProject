@@ -3,9 +3,11 @@
 		image: url('../img/fon.jpg') 
 		position: top
 		repeat: no-repeat
-	max-height: 710px
+		size: cover 
+	min-height: 710px
 	overflow: hidden
 	position: relative
+	padding-bottom: 10px
 	&-container
 		height: 55px
 		box-shadow: 0 21px 21px rgba(0, 0, 0, 0.28)
@@ -16,7 +18,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-	&-button
+	&-burger 
 		display: none  // для мобильной версии (бургер) 
 	&-menu
 		&__list
@@ -41,5 +43,6 @@
 				color: $text-button-color
 				font-size: 14px
 				+regular
-	
+
+		
 		
